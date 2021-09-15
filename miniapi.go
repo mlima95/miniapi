@@ -13,7 +13,7 @@ func helloHandler(w http.ResponseWriter, req *http.Request) {
 	m := tm.Minute()
 	switch req.Method {
 	case http.MethodGet:
-		fmt.Fprintf(w, "%dh%d", h, m)
+		fmt.Fprintf(w, "%02dh%02d", h, m)
 	}
 }
 
